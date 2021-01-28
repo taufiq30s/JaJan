@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ToggleButton
+        android:id="@+id/tSen"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:textOff="Sen"
+        android:textOn="Sen"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+    <ToggleButton
+        android:id="@+id/tSel"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="Sel"
+        android:textOn="Sel"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tRab"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="Rab"
+        android:textOn="Rab"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tKam"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="Kam"
+        android:textOn="Kam"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tJum"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="Jum"
+        android:textOn="Jum"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tSab"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="Sab"
+        android:textOn="Sab"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tMin"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textOff="Min"
+        android:textOn="Min"
+        style="@style/toggleButton"
+        android:background="@drawable/ic_toggle_bg" />
+</LinearLayout>

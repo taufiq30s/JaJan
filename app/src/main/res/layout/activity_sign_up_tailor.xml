@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.SignUpTailorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSignupTailor"
+        android:text="Sign up"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSignUpDescTailor"
+        android:text="Silahkan anda masukan informasi toko anda."
+        app:layout_constraintTop_toBottomOf="@id/lblSignupTailor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFieldNamaToko"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/lblSignUpDescTailor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="Nama Toko"
+            android:paddingRight="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFieldAlamatToko"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtFieldNamaToko"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="Alamat Toko"
+            android:paddingRight="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFieldNoTelpToko"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtFieldAlamatToko"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="Nomor Telepon"
+            android:inputType="phone"
+            android:paddingRight="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblJadwalToko"
+        android:text="Jadwal Toko Buka"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtFieldNoTelpToko"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/daypicker_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@id/lblJadwalToko"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="5dp">
+        <include
+            android:id="@+id/daypicker"
+            layout="@layout/daypicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></include>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFieldJamBuka"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/daypicker_layout"
+        app:layout_constraintStart_toStartOf="parent">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtJamBuka"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="Jam Buka"
+            android:inputType="none"
+            android:focusable="false"
+            android:paddingRight="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFieldJamTutup"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/daypicker_layout"
+        app:layout_constraintEnd_toEndOf="parent">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtJamTutup"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="Jam Tutup"
+            android:inputType="none"
+            android:focusable="false"
+            android:paddingRight="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:background="@drawable/btn_round"
+        app:layout_constraintTop_toBottomOf="@id/txtFieldJamTutup"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+        android:onClick="onClickBtnRegisterToko"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

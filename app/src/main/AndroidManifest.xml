@@ -8,17 +8,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JaJanJasaJahitOnline">
+        android:theme="@style/Theme.AppCompat.Light">
         <activity
-            android:name=".ui.auth.LoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".MainActivity">
+            android:name=".ui.customer.CustHomeActivity"/>
+        <activity
+            android:name=".ui.auth.SignUpTailorActivity"
+            android:label="Register Toko"
+            android:parentActivityName=".ui.auth.SignUpActivity"/>
+        <activity android:name=".LaunchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.auth.SignUpActivity"
+            android:label="Register"
+            android:parentActivityName=".LaunchActivity" />
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:label="Login"
+            android:parentActivityName=".LaunchActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
