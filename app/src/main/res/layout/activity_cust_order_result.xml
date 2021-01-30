@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.customer.CustOrderResultActivity"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblProductResTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Product Result"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblProductRes"
+        app:layout_constraintTop_toBottomOf="@+id/lblProductResTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="OBISA!"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTailorResTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblProductRes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Tailor Result"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTailorRes"
+        app:layout_constraintTop_toBottomOf="@+id/lblTailorResTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="OBISA!"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTotal"
+        app:layout_constraintTop_toBottomOf="@+id/lblTailorRes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:text="Total : Rp. 500.000"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFinish"
+        android:text="Finish"
+        android:background="@drawable/btn_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

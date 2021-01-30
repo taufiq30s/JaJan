@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.customer.CustNewOrder">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgOrderProduct"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblProductName"
+        android:text="Baju Kira Kira"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgOrderProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSize"
+        android:text="Ukuran"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/lblProductName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgSize"
+        app:layout_constraintTop_toBottomOf="@id/lblSize"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:layout_marginRight="15dp"
+            android:id="@+id/rbS"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:layout_marginRight="15dp"
+            android:id="@+id/rbM"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:layout_marginRight="15dp"
+            android:id="@+id/rbL"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XL"
+            android:layout_marginRight="15dp"
+            android:id="@+id/rbXL"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJumlahOrder"
+        app:layout_constraintTop_toBottomOf="@id/rgSize"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Jumlah"
+        android:layout_marginLeft="20dp"
+        android:autofillHints="no"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCatatanOrder"
+        app:layout_constraintTop_toBottomOf="@id/txtJumlahOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Catatan"
+        android:layout_marginHorizontal="20dp"
+        android:autofillHints="no"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNextOrderTaylor"
+        android:text="Next"
+        android:background="@drawable/btn_round"
+        app:layout_constraintTop_toBottomOf="@id/txtCatatanOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:onClick="onClickBtnFindTaylor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

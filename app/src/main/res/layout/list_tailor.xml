@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/shape_border_grid"
+    android:padding="3dp"
+    android:layout_margin="10dp">
+    <ImageView
+        android:id="@+id/imgTaylor"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/lblTaylorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nama Toko"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/lblHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Rp. xxxx"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>

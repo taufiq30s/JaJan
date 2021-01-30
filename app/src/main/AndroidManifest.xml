@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.moonchild.jajan">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
-            android:name=".ui.customer.CustHomeActivity"/>
+            android:name=".ui.customer.CustOrderResultActivity"
+            android:label="Order Result"/>
+        <activity
+            android:name=".ui.customer.CustSelectTailor"
+            android:label="Pilih Tailor"
+            android:parentActivityName=".ui.customer.CustNewOrder"/>
+        <activity
+            android:name=".ui.customer.CustNewOrder"
+            android:label="Order Baru"
+            android:parentActivityName=".ui.customer.CustListProductActivity" />
+        <activity
+            android:name=".ui.customer.CustListProductActivity"
+            android:label="Produk"
+            android:parentActivityName=".ui.customer.CustHomeActivity" />
+        <activity
+            android:name=".ui.customer.CustHomeActivity"
+            android:label="Home" />
         <activity
             android:name=".ui.auth.SignUpTailorActivity"
             android:label="Register Toko"
-            android:parentActivityName=".ui.auth.SignUpActivity"/>
+            android:parentActivityName=".ui.auth.SignUpActivity" />
         <activity android:name=".LaunchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
